@@ -37,7 +37,7 @@ class SlamBookComponent extends PolymerElement with ObservableMixin {
     request.onReadyStateChange.listen(onData); 
     
     // POST the data to the server.
-    var url = 'http://127.0.0.1:4040';
+    var url = 'http://tudorluca-slambook.herokuapp.com:4040';
     request.open('POST', url);
     request.send(_slambookAsJsonData());
   }

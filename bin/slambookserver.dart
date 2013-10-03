@@ -6,8 +6,8 @@ import 'dart:io';
  * Provides CORS headers, so can be accessed from any other page
  */
 
-final HOST = '127.0.0.1'; // eg: localhost 
-final PORT = 4040;        // a port, must match the client program
+final HOST = 'http://tudorluca-slambook.herokuapp.com';
+final PORT = 4040;
 
 void main() {
   HttpServer.bind(HOST, PORT).then(gotMessage, onError: printError);
